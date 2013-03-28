@@ -149,6 +149,11 @@ static char kAFImageRequestOperationObjectKey;
     self.af_imageRequestOperation = nil;
 }
 
++ (void)clearAFImageCacheForKey:(NSString *)url
+{
+    [[[self class] af_sharedImageCache] removeObjectForKey:url];
+}
+
 @end
 
 #pragma mark -

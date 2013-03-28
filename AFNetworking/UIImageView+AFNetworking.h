@@ -73,6 +73,8 @@
  */
 - (void)cancelImageRequestOperation;
 
++ (void)clearAFImageCacheForKey:(NSString *)url;
+
 @end
 
 #endif
